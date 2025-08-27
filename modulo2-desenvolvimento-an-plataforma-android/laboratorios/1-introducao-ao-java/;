@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.Scanner;
+
+class DataExtenso {
+	private static void splitEntradaPorSubstring(String entrada){
+		String sDia = Integer.parseInt(entrada.substring(0, 2));
+		String sMes = Integer.parseInt(entrada.substring(2, 4));
+		String sAno = Integer.parseInt(entrada.substring(4, 8));
+		
+		System.out.printf("dia=%s, mes=%s, ano=%s", sDia, sMes, sAno);
+	}
+
+	private static void splitEntradaPorDivisao(String entrada){
+
+	}
+
+	public static void main(String[] args){
+		Scanner scanner = new Scanner(System.in);
+		String entrada = scanner.nextLine();
+		splitEntradaPorSubstring(entrada);
+		scanner.close();
+	}
+}
